@@ -85,6 +85,7 @@ console.log(britItemTitle + " costs " + "£" + britItemPrice);
   * Question 5
   */
 
+// This picks only the items whose materials arrays are longer than 8 items
   var eightMatsPlus = items.filter(function(items){
     return items.materials.length > 8;
   });
@@ -99,5 +100,21 @@ console.log(britItemTitle + " costs " + "£" + britItemPrice);
 
   });
 
+
 console.log(itemTitles[0] + " has " + itemMats[0].length + " materials:", itemMats[0]);
 console.log(itemTitles[1] + " has " + itemMats[1].length + " materials:", itemMats[1]);
+
+
+
+/*
+ * Question 6
+ */
+
+// This only allows the items made by the seller to be added to the ownerMade array
+ var ownerMade = items.filter(function(items){
+   return items.who_made === "i_did";
+ });
+
+console.log(ownerMade.length + " were made by their sellers");
+
+// "who_made": "i_did",
