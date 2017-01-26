@@ -62,3 +62,25 @@ var britItemPrice = britItem.map(function(items){
 
 
 console.log(britItemTitle + " costs " + "£" + britItemPrice);
+
+
+/*
+ * Question 4
+ */
+
+// This filter only allows items whose materials include wood
+ var justMats = items.filter(function(items){
+   return items.materials.includes("wood");
+ });
+
+// This extracts the titles of the items whose materials include wood
+ var woodenItems = justMats.map(function(items){
+   return items.title;
+ });
+
+ console.log(woodenItems);
+
+
+ /*
+  * Question 5
+  */
