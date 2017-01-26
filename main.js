@@ -84,3 +84,20 @@ console.log(britItemTitle + " costs " + "£" + britItemPrice);
  /*
   * Question 5
   */
+
+  var eightMatsPlus = items.filter(function(items){
+    return items.materials.length > 8;
+  });
+
+
+  var itemTitles = eightMatsPlus.map(function(items){
+    return items.title;
+  });
+
+  var itemMats = eightMatsPlus.map(function(items){
+    return items.materials;
+
+  });
+
+console.log(itemTitles[0] + " has " + itemMats[0].length + " materials:", itemMats[0]);
+console.log(itemTitles[1] + " has " + itemMats[1].length + " materials:", itemMats[1]);
