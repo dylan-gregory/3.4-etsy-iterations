@@ -6,6 +6,7 @@
 var justPrices = items.map(function(items){
   return items.price;
 })
+
 // Adding up each price, them dividing by the number of total items in the array
 var averagePrice = justPrices.reduce(function(total, current){
     return (total + current);
@@ -41,3 +42,23 @@ console.log("Items that cost between $14.00 USD and $18.00 USD:", midPriceItems)
 /*
  * Question 3
  */
+
+// Opposite of last function, it only allows currency codes of NOT USD thru
+ function britainFilter(items){
+   return items.currency_code !== "USD";
+ }
+
+var britItem = items.filter(britainFilter);
+
+// Grabbing the items title
+var britItemTitle = britItem.map(function(items){
+  return items.title;
+})
+
+// grabbing the items price
+var britItemPrice = britItem.map(function(items){
+  return items.price;
+})
+
+
+console.log(britItemTitle + " costs " + "£" + britItemPrice);
