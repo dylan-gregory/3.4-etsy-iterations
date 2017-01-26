@@ -101,8 +101,8 @@ console.log(britItemTitle + " costs " + "£" + britItemPrice);
   });
 
 
-console.log(itemTitles[0] + " has " + itemMats[0].length + " materials:", itemMats[0]);
-console.log(itemTitles[1] + " has " + itemMats[1].length + " materials:", itemMats[1]);
+console.log(itemTitles[0] + " has " + itemMats[0].length + " materials: " + itemMats[0]);
+console.log(itemTitles[1] + " has " + itemMats[1].length + " materials: " + itemMats[1]);
 
 
 
